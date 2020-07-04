@@ -1,0 +1,116 @@
+.search-form-item {
+	width: 114px;
+    height: 38px;
+    background-color: grey;
+}
+
+.search-form-item-2 {
+	margin-top: 20px;
+	width: 114px;
+    height: 38px;
+    background-color: grey;
+}
+.search-form-item-2:hover {
+  background-color: green;
+}
+
+.search-form-item-2:focus {
+  background-color: white;
+  border: 2px solid;
+  border-color: green;
+  outline: none;
+}
+
+.search-form-item-wrap {
+	display: flex;
+}
+
+.search-form-item input[type="number"]::-webkit-outer-spin-button,
+.search-form-item input[type="number"]::-webkit-inner-spin-button,
+.search-form-item-2 input[type="number"]::-webkit-outer-spin-button,
+.search-form-item-2 input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-number-minus,
+.button-number-plus {
+	position: relative;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.button-number-plus::after,
+.button-number-minus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  width: 12px;
+  background: black;
+}
+
+.button-number-plus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 12px;
+  height: 3px;
+  background: black;
+}
+
+.button-number-plus:hover::after,
+.button-number-minus:hover::after,
+.button-number-plus:hover::before,
+.button-number-plus:focus::after,
+.button-number-minus:focus::after,
+.button-number-plus:focus::before {
+  background: green;
+}
+
+.button-number-plus:active::after,
+.button-number-minus:active::after,
+.button-number-plus:active::before {
+  background: white;
+}
+
+.search-form-item input,
+.search-form-item-2 input {
+	color: black;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	text-align: center;
+  	width: 38px;
+  	border: none;
+  	background-color: grey;
+  	padding: 0;
+}
+
+.search-form-item input::placeholder,
+.search-form-item-2 input::placeholder {
+	color: black;
+  	font-weight: 700;
+  	text-transform: uppercase;
+}
+
+.search-form-item input:hover,
+.search-form-item-2 input:hover {
+  background-color: green;
+}
+
+.search-form-item input:focus,
+.search-form-item-2 input:focus {
+  background-color: white;
+  border: 2px solid;
+  border-color: green;
+  outline: none;
+}
